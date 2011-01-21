@@ -9,6 +9,7 @@ class Controller < Autumn::Leaf
   end
 
   def info_command(stem, sender, reply_to, msg)
+    # TODO: Look for ways to allow a second argument that will allow reply to user's nick; e.g., "nickname: Do this or that."
     case msg
     when nil
       render :help
@@ -27,6 +28,7 @@ class Controller < Autumn::Leaf
   end
 
   def find_message(key)
+    # TODO: Move this out to some other data structure. Maybe a YML list in data/.
     dict = {
       callin: "Dial 855-855-0535 to talk to Dan on 'The Daily Edition'.",
       iphone: "Visit http://5by5.fm on your iOS device to listen live.",
