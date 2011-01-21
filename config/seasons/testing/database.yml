@@ -1,7 +1,0 @@
---- 
-Scorekeeper: 
-  username: root
-  adapter: mysql
-  host: localhost
-  database: scorekeeper
-  password: ""

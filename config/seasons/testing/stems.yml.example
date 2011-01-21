@@ -1,0 +1,10 @@
+---
+Yourbot:
+  nick: yourbot
+  password: nickservpass
+  leaves:
+  - Insulter
+  - Info
+  rejoin: true
+  channel: "#yourchannel"
+  server: irc.freenode.net
