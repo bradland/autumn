@@ -1,3 +1,15 @@
+= Bradland Fork
+
+This is a fork of the Autumn IRC Bot Framework for use on our own IRC channel. I
+track the RISCfuture branch as best as I can. We run the framework daemonized, so
+if there are problems in the mainline branch, you may see fixes here.
+
+
+== Fixes
+
+* Feb 11 2011
+  * Fix working directory issue when running as daemon (Gemfile not found bug)
+
 = Autumn: A Ruby IRC Bot Framework
 
 <b>Version 3.0 (Jul 4, 2008)</b>
@@ -475,9 +487,9 @@ wanted your bot to say something after each command:
 
  class Controller < Autumn::Leaf
    after_filter :outro
- 
+
    private
- 
+
    def outro_filter(stem, channel, sender, command, msg, opts)
      stem.message "This has been a production of OutroBot!", channel
    end
@@ -507,7 +519,7 @@ person's nick:
 
  class Controller < Autumn::Leaf
    before_filter :authenticate, :only => :quit, :admin => 'Yournick'
- 
+
    def authenticate_filter(stem, channel, sender, command, msg, opts)
      sender == opts[:admin]
    end
