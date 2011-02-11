@@ -34,6 +34,7 @@ class Controller < Autumn::Leaf
       iphone: "Visit http://5by5.fm on your iOS device to listen live.",
       ios: "Visit http://5by5.fm on your iOS device to listen live.",
       nick: "Type '/nick newnick' to change your name.",
+      qwebirc: "Web chat users, type '/nick newnick' to change your name.",
       watch: "On your computer: http://5by5.tv/live. On your iOS device: http://5by5.fm. In iTunes: Advanced, Open Audio Stream, listen.5by5.tv."
     }
     unless dict[key.to_sym].nil?
